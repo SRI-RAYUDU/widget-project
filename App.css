@@ -1,0 +1,131 @@
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar input {
+  padding: 8px;
+  font-size: 14px;
+  width: 50%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.category {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.widget {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 450px;
+  height:200px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar button:first-of-type {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
